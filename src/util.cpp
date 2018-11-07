@@ -985,13 +985,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Exist
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Exist
-    // Mac: ~/Library/Application Support/Exist
-    // Unix: ~/.Exist
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Existv2
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Existv2
+    // Mac: ~/Library/Application Support/Existv2
+    // Unix: ~/.Existv2
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Exist";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Existv2";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1003,10 +1003,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "Exist";
+    return pathRet / "Existv2";
 #else
     // Unix
-    return pathRet / ".Exist";
+    return pathRet / ".Existv2";
 #endif
 #endif
 }

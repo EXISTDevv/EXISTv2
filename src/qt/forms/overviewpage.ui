@@ -39,6 +39,9 @@
             <property name="text">
              <string>Wallet</string>
             </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
            </widget>
           </item>
           <item>
@@ -88,6 +91,9 @@
             <property name="text">
              <string>Spendable:</string>
             </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
            </widget>
           </item>
           <item row="0" column="1">
@@ -98,6 +104,9 @@
               <bold>true</bold>
              </font>
             </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="cursor">
              <cursorShape>IBeamCursor</cursorShape>
             </property>
@@ -105,7 +114,7 @@
              <string>Your current spendable balance</string>
             </property>
             <property name="text">
-             <string notr="true">0 EXIST</string>
+             <string notr="true">0 EXISTV2</string>
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -117,6 +126,9 @@
             <property name="text">
              <string>Stake:</string>
             </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
            </widget>
           </item>
           <item row="1" column="1">
@@ -127,6 +139,9 @@
               <bold>true</bold>
              </font>
             </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="cursor">
              <cursorShape>IBeamCursor</cursorShape>
             </property>
@@ -134,7 +149,7 @@
              <string>Total of coins that was staked, and do not yet count toward the current balance</string>
             </property>
             <property name="text">
-             <string notr="true">0 EXIST</string>
+             <string notr="true">0 EXISTV2</string>
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -146,6 +161,9 @@
             <property name="text">
              <string>Unconfirmed:</string>
             </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
            </widget>
           </item>
           <item row="2" column="1">
@@ -156,6 +174,9 @@
               <bold>true</bold>
              </font>
             </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="cursor">
              <cursorShape>IBeamCursor</cursorShape>
             </property>
@@ -163,7 +184,7 @@
              <string>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</string>
             </property>
             <property name="text">
-             <string notr="true">0 EXIST</string>
+             <string notr="true">0 EXISTV2</string>
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -175,6 +196,9 @@
             <property name="text">
              <string>Immature:</string>
             </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
            </widget>
           </item>
           <item row="3" column="1">
@@ -185,11 +209,14 @@
               <bold>true</bold>
              </font>
             </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="toolTip">
              <string>Mined balance that has not yet matured</string>
             </property>
             <property name="text">
-             <string notr="true">0 EXIST</string>
+             <string notr="true">0 EXISTV2</string>
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -208,6 +235,9 @@
             <property name="text">
              <string>Total:</string>
             </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
            </widget>
           </item>
           <item row="5" column="1">
@@ -217,6 +247,9 @@
               <weight>75</weight>
               <bold>true</bold>
              </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
             </property>
             <property name="cursor">
              <cursorShape>IBeamCursor</cursorShape>
@@ -269,6 +302,9 @@
            <widget class="QLabel" name="label_4">
             <property name="text">
              <string>&lt;b&gt;Recent transactions&lt;/b&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
             </property>
            </widget>
           </item>

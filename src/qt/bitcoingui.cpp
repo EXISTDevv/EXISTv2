@@ -77,8 +77,10 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     rpcConsole(0),
     nWeight(0)
 {
-    resize(850, 550);
-    setWindowTitle(tr("Exist") + " - " + tr("Wallet"));
+    resize(900, 506);
+    setWindowTitle(tr("Exist V2") + " - " + tr("Wallet"));
+
+ qApp->setStyleSheet("QMainWindow { background-color: rgb(192,192,192); background-image: url(:/images/bkg);} QToolBar > QToolButton {color:#ffffff;} QToolBar > QToolButton:checked {color:#000000;}");
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));
